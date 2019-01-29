@@ -1,0 +1,1 @@
+<list bindchangeEvent='changeEvent' index='{{num}}'/>

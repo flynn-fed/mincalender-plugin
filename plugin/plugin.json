@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+    "list": "components/mincalender/mincalender"
+  },
+  "main": "index.js"
+}

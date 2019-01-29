@@ -1,0 +1,22 @@
+<view class='calContainer'>
+  <view class='calWrap'>
+    <div class='calTitle'>
+      <!-- <span class='calPrev' bindtap='getPrevMonth'>prev</span> -->
+      <p class='calName'>{{currentTime}}</p>
+      <image class='calPrev' src='/images/leftBtn.png'  bindtap='getPrevMonth'></image>
+      <image class='calPrev' src='/images/rightBtn.png' bindtap='getNextMonth'></image>
+      <!-- <span class='calPrev' bindtap='getNextMonth'>next</span> -->
+    </div>
+    <div class='calBody'>
+      <nav>
+        <a wx:for='{{navTitle}}'>{{item}}</a>
+      </nav>
+      <ul>
+        <li wx:for='{{list}}' >
+          <p class='bgColor' wx:if='{{currentD == item.name}}'></p>
+          <span bindtap='getName' data-num='{{item.name}}'>{{item.name}} </span>
+        </li>
+      </ul>
+    </div>
+  </view>
+</view>
